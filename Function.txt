@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Function</title>
+  <script type="text/javascript">
+    function add() {
+      var A = Number(document.example.firstno.value);
+      var B = Number(document.example.secondno.value);
+      var C = A + B;
+      document.example.sumno.value = C;
+    }
+  </script>
+</head>
+<body>
+  <form name="example">
+    <input type="text" name="firstno" value=""> +
+    <input type="text" name="secondno" value=""> =
+    <input type="text" name="sumno" value="" readonly>
+    <br>
+    <input type="button" name="addno" value="Submit" onClick="add()">
+  </form>
+</body>
+</html>
